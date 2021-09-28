@@ -1,13 +1,15 @@
-.hero{
-    width: 25%;
-}
+
 
 
 .line-ico{
     height: 4px;
-    width: 100px;
+    width: 80px;
 }
 
-.col img{
+.portfolio-img{
     width: 100%;
+}
+
+.my-b-radius{
+    border-radius: 20px;
 }
