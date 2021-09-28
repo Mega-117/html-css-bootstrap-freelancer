@@ -1,0 +1,10 @@
+.hero{
+    width: 25%;
+}
+
+
+.line-left{
+    height: 4px;
+    width: 100px;
+    background-color: black;
+}
