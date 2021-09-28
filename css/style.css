@@ -3,8 +3,11 @@
 }
 
 
-.line-left{
+.line-ico{
     height: 4px;
     width: 100px;
-    background-color: black;
+}
+
+.col img{
+    width: 100%;
 }
