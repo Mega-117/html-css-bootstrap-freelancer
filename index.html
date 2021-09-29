@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Bootstrap</title>
 </head>
 <body>
     <header>
-        <div class="bg-dark text-white"><!-- bg pagina -->
-            <nav class="container d-flex px-3 py-2"> <!-- blok contenuto -->
-                <h3>START BOOTSTRAP</h3>
-                <button class="btn btn-outline-primary ms-auto"><i class="fas fa-bars"></i></button>
+        <div class="bg-dark text-white py-3"><!-- bg pagina -->
+            <nav class="container d-flex align-items-center"> <!-- blok contenuto -->
+                <div class="fw-bold ">
+                    START BOOTSTRAP
+                </div>
+                
+            
+                <div class="ms-auto">
+
+                    <ul class="list-inline d-none d-sm-block mb-0">
+                        <li class="list-inline-item">link</li>
+                        <li class="list-inline-item">link</li>
+                        <li class="list-inline-item">link</li>
+                    </ul>
+
+                    <button class="btn btn-outline-dark d-sm-none"><i class="fas fa-bars"></i></button>
+
+                </div>
             </nav>
         </div>
 
         <div class="bg-success"> <!-- bg pagina -->
             <div class="container">
 
-                <div class="row justify-content-center px-5 py-5 text-center text-white"><!-- block contenuto -->
-                    <img class="col-6 mb-2" src="img/avatar.svg" alt="">
+                <div class="row justify-content-center py-5 text-center text-white"><!-- block contenuto -->
+                    <div class="col-7 col-md-3">
+                        <img class="w-100  mb-3" src="img/avatar.svg" alt="">
+
+                    </div>
                     <h1>START BOOTSTRAP</h1>
                     <!-- inizio separatore  -->
                     <div class="mb-3">
@@ -38,7 +55,8 @@
 
     <main>
         <div><!-- bg pagina -->
-            <div class="px-5 py-5"> <!-- block contenuto -->
+            <div class="container py-5"> <!-- block contenuto -->
+                
                 <div class="text-center">
 
                     <h2>PORTFOLIO</h2>
@@ -50,26 +68,29 @@
                     </div>
                     <!-- fine separatore -->
                 </div>
-                <div> <!-- img portfolio flex-->
-                    <div class="mb-3 "><!-- contenitore img -->
-                        <img class="portfolio-img my-b-radius" src="img/cabin.png" alt="">
+                <div class="row justify-content-center"> <!-- img portfolio flex-->
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <img class="w-100 my-b-radius" src="img/cabin.png" alt="">
                     </div>
-                    <div class="mb-3 "><!-- contenitore img -->
-                        <img class="portfolio-img my-b-radius" src="img/cake.png" alt="">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <img class="w-100 my-b-radius" src="img/cake.png" alt="">
                     </div>
-                    <div class="mb-3 "><!-- contenitore img -->
-                        <img class="portfolio-img my-b-radius" src="img/circus.png" alt="">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <img class="w-100 my-b-radius" src="img/circus.png" alt="">
                     </div>
-                    <div class="mb-3 "><!-- contenitore img -->
-                        <img class="portfolio-img my-b-radius" src="img/game.png" alt="">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <img class="w-100 my-b-radius" src="img/game.png" alt="">
                     </div>
-                    <div class="mb-3 "><!-- contenitore img -->
-                        <img class="portfolio-img my-b-radius" src="img/safe.png" alt="">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <img class="w-100 my-b-radius" src="img/safe.png" alt="">
                     </div>
-                    <div class="mb-3 "><!-- contenitore img -->
-                        <img class="portfolio-img my-b-radius" src="img/submarine.png" alt="">
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <img class="w-100 my-b-radius" src="img/submarine.png" alt="">
                     </div>
+                    
                 </div>
+
+                
             </div>
         </div>
         <div class="bg-success"><!-- bg pagina -->
@@ -82,21 +103,26 @@
                     <div class="line-ico bg-white d-inline-block align-middle rounded-3"></div>
                 </div>
                 <!-- fine separatore -->
-                <div class="mb-3">
-                    Freelancer is a free boostrap theme created by Start Boostrap. The download includes the complete source files including HTML, CSS, and Jaca Script as well as optional LESS stylesheets for easy customization.
-                </div>
-                <div class="mb-3">
-                    Whether you're a student looking to showcase your work, a professional looking to attact clients, or a graphic artist looking to share your projects this template is the perfect starting point!
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-5 mb-3">
+                            Freelancer is a free boostrap theme created by Start Boostrap. The download includes the complete source files including HTML, CSS, and Jaca Script as well as optional LESS stylesheets for easy customization.
+                        </div>
+                        <div class="col-10 col-md-5 mb-3">
+                            Whether you're a student looking to showcase your work, a professional looking to attact clients, or a graphic artist looking to share your projects this template is the perfect starting point!
+                        </div>
+
+                    </div>
                 </div>
                 <div class="text-center">
-                    <button class="btn btn-outline-primary">Download</button>
+                    <button class="btn btn-outline-dark">Download</button>
                 </div>
             </div>
         </div>
 
         <div><!-- bg pagin -->
-            <div class="px-5 py-5"><!-- block contenitore -->
-                <h2 class="text-center">ABOUT</h2>
+            <div class="container px-5 py-5"><!-- block contenitore -->
+                <h2 class="text-center">CONTACT ME</h2>
                 <!-- inizio separatore  -->
                 <div class="text-center mb-3">
                     <div class="line-ico bg-black d-inline-block align-middle rounded-3"></div>
@@ -104,19 +130,49 @@
                     <div class="line-ico bg-black d-inline-block align-middle rounded-3"></div>
                 </div>
                 <!-- fine separatore -->
-                <form class="" action="">
-                    <input class=" mb-2 col-12" type="text" placeholder="Name">
-                    <input class=" mb-2 col-12" type="email" placeholder="Email Address">
-                    <input class=" mb-2 col-12" type="number" placeholder="Phone Number">
-                    <input class=" mb-2 col-12" type="text-area" style="height:200px">
-                    <input class=" mb-2" type="submit" value="Submit">
+                <div class="row justify-content-center">
+                    <form class="col-10" action="">
+                        <input class="border-1 border-top-0  border-bottom-2 border-start-0 w-100 border-end-0 mb-2" type="text" placeholder="Name">
+                        <input class="border-1 border-top-0 border-start-0 w-100 border-end-0 mb-2" type="email" placeholder="Email Address">
+                        <input class="border-1 border-top-0 border-start-0 w-100 border-end-0 mb-2" type="text" placeholder="Phone Number">
+                        <textarea class="border-top-0 border-start-0 w-100 border-end-0 mb-2" rows="8" cols="50" name="comment" form="usrform" placeholder="Messaggio"></textarea>
+                        
+                        
+                        <input class="btn btn-success mb-2" type="submit" value="Submit">
+    
+                    </form>
 
-                </form>
+                </div>
             </div>
             
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-top bg-dark">
+            <div class="container py-5">
+                <div class="row justify-content-center text-center text-white">
+                    <div class="col-12 col-md-4 py-4">
+                        <h5>LOCATION</h5>
+                        <span>2215 john Daniel Driver Clark, MO 54243</span>
+                        </div>
+                    <div class="col-12 col-md-4 py-4">
+                        <h5 class="text-uppercase">around the web</h5>
+                        <ul class="list-inline">
+                            <li class="list-inline-item border border-white border-2 rounded-pill square fs-3"><i class="fab fa-facebook-f"></i></li>
+                            <li class="list-inline-item border border-white border-2 rounded-pill square fs-3"><i class="fab fa-google-plus-g"></i></i></li>
+                            <li class="list-inline-item border border-white border-2 rounded-pill square fs-3"><i class="fab fa-twitter"></i></li>
+                            <li class="list-inline-item border border-white border-2 rounded-pill square fs-3"><i class="fab fa-linkedin-in"></i></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-4 py-4">
+                        <h5 class="text-uppercase">about freelancer</h5>
+                        <span>Freelance is free to use,open sounce Boostarp theme creared by Start Bootstrap.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>

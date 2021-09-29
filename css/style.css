@@ -3,13 +3,38 @@
 
 .line-ico{
     height: 4px;
-    width: 80px;
-}
-
-.portfolio-img{
+    max-width: 80px;
     width: 100%;
 }
 
+
 .my-b-radius{
-    border-radius: 20px;
+    border-radius: 10px;
+}
+
+.my-form-b-color{
+    border-color: gray;
+}
+
+/* sovrascritture */
+.btn-outline-dark{
+    color: #ffffff;
+    border-color: #ffffff;
+}   
+
+.btn-outline-dark:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+.square{
+    height: 60px;
+    width: 60px;
+    padding: 8px 0;
+}
+
+:root{
+    --bs-success-rgb: 25,135,84;
 }
