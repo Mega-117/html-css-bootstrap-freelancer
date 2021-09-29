@@ -1,5 +1,21 @@
 
+.link-green{
+    color: #1abc9c;
+    text-decoration: none;
+}
 
+.link-green:hover {
+    color: #ffffff;
+}
+
+.link-white{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.link-white:hover {
+    color: #ffffff;
+}
 
 .line-ico{
     height: 4px;
@@ -7,13 +23,24 @@
     width: 100%;
 }
 
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.385);
+}
 
 .my-b-radius{
     border-radius: 10px;
 }
 
-.my-form-b-color{
-    border-color: gray;
+.my-bg-grey{
+    background-color: #3a546d;
+}
+
+.square{
+    height: 60px;
+    width: 60px;
+    line-height: 58px
 }
 
 /* sovrascritture */
@@ -28,13 +55,13 @@
     border-color: #ffffff;
 }
 
-
-.square{
-    height: 60px;
-    width: 60px;
-    padding: 8px 0;
+:root{
+    --bs-success-rgb: 26, 188, 156;
+    --bs-dark-rgb: 44, 62, 80;
 }
 
-:root{
-    --bs-success-rgb: 25,135,84;
+.btn-success {
+    color: #fff;
+    background-color: #1abc9c;
+    border-color: #1abc9c;
 }
