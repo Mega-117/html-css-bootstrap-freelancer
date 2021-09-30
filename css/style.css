@@ -23,9 +23,20 @@
     width: 100%;
 }
 
+
+.img-container img{
+    filter:blur(0px);
+    transition: filter 1s;
+}
+.img-container:hover .overlay{
+    height: 100%;
+    transition: height 1s;
+    
+}
+
 .overlay{
     width: 100%;
-    height: 100%;
+    height: 0%;
     background-color: rgba(0, 0, 0, 0.385);
 }
 

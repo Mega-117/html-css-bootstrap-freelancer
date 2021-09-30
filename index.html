@@ -1,11 +1,18 @@
+
+    
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" >
+    <link rel="stylesheet" href="css/style.css"> 
     <title>Bootstrap</title>
 </head>
 <body>
@@ -15,30 +22,30 @@
                 <div class="fw-bold fs-3">
                     START BOOTSTRAP
                 </div>
-                
-            
+                            
                 <div class="ms-auto">
-
-                    <ul class="list-inline d-none d-sm-block mb-0">
-                        <li class="list-inline-item"><a class="link-white" href="#">PROFOLIO</a></li>
-                        <li class="list-inline-item"><a class="link-white" href="#">ABOUT</a></li>
-                        <li class="list-inline-item"><a class="link-white" href="#">CONTACT</a></li>
+                    <ul class="list-inline mb-0 d-none d-sm-block">
+                        <li class="list-inline-item"><a class="link-white" href="#portfolio">PROFOLIO</a></li>
+                        <li class="list-inline-item"><a class="link-white" href="#about">ABOUT</a></li>
+                        <li class="list-inline-item"><a class="link-white" href="#contact">CONTACT</a></li>
                     </ul>
-
+                    
                     <button class="btn btn-outline-dark d-sm-none"><i class="fas fa-bars"></i></button>
-
                 </div>
             </nav>
         </div>
+    </header>
 
+    <main>
+        <!-- hero -->
         <div class="bg-success"> <!-- bg pagina -->
             <div class="container">
 
                 <div class="row justify-content-center py-5 text-center text-white"><!-- block contenuto -->
                     <div class="col-7 col-md-3">
                         <img class="w-100  mb-3" src="img/avatar.svg" alt="">
-
                     </div>
+
                     <h1>START BOOTSTRAP</h1>
                     <!-- inizio separatore  -->
                     <div class="mb-3">
@@ -51,13 +58,11 @@
                 </div>
             </div>
         </div>
-    </header>
 
-    <main>
         <div><!-- bg pagina -->
-            <div class="container py-5"> <!-- block contenuto -->
+            <div  class="container py-5"> <!-- block contenuto -->
                 
-                <div class="text-center">
+                <div id="portfolio" class="text-center">
 
                     <h2>PORTFOLIO</h2>
                     <!-- inizio separatore  -->
@@ -68,36 +73,60 @@
                     </div>
                     <!-- fine separatore -->
                 </div>
-                <div class="row justify-content-center"> <!-- img portfolio flex-->
+                <div  class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center"> <!-- img portfolio flex-->
+                        <!-- col-12 col-md-6 col-lg-4 -->
+                    <div class=" col mb-3  overflow-hidden">
+                        <div class="img-container w-100 position-relative my-b-radius overflow-hidden">
+                            <img class="w-100" src="img/cabin.png" alt="">
+                            <div class="overlay position-absolute top-50 start-50 translate-middle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col mb-3  overflow-hidden">
+                        <div class="img-container w-100 position-relative my-b-radius overflow-hidden">
+                            <img class="w-100" src="img/cake.png" alt="">
+                            <div class="overlay position-absolute top-50 start-50 translate-middle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col mb-3  overflow-hidden">
+                        <div class="img-container w-100 position-relative my-b-radius overflow-hidden">
+                            <img class="w-100" src="img/circus.png" alt="">
+                            <div class="overlay position-absolute top-50 start-50 translate-middle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col mb-3  overflow-hidden">
+                        <div class="img-container w-100 position-relative my-b-radius overflow-hidden">
+                            <img class="w-100" src="img/game.png" alt="">
+                            <div class="overlay position-absolute top-50 start-50 translate-middle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col mb-3  overflow-hidden">
+                        <div class="img-container w-100 position-relative my-b-radius overflow-hidden">
+                            <img class="w-100" src="img/safe.png" alt="">
+                            <div class="overlay position-absolute top-50 start-50 translate-middle">
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col mb-3  overflow-hidden">
+                        <div class="img-container w-100 position-relative my-b-radius overflow-hidden">
+                            <img class="w-100" src="img/submarine.png" alt="">
+                            <div class="overlay position-absolute top-50 start-50 translate-middle">
+                            </div>
+                        </div>
+                    </div>
                     
-                    <div class="col-12 col-sm-6 col-md-4 mb-3 position-relative">
-                        <div class="overlay position-absolute top-50 start-50 translate-middle"></div>
-                        <img class="w-100 my-b-radius" src="img/cabin.png" alt="">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-3">
-                        <img class="w-100 my-b-radius" src="img/cake.png" alt="">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-3">
-                        <img class="w-100 my-b-radius" src="img/circus.png" alt="">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-3">
-                        <img class="w-100 my-b-radius" src="img/game.png" alt="">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-3">
-                        <img class="w-100 my-b-radius" src="img/safe.png" alt="">
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4 mb-3">
-                        <img class="w-100 my-b-radius" src="img/submarine.png" alt="">
-                    </div>
                     
                 </div>
 
                 
             </div>
         </div>
-        <div class="bg-success"><!-- bg pagina -->
+        <div id="about" class="bg-success"><!-- bg pagina -->
             <div class=" text-white px-5 py-5">   <!-- block contenuto -->
-                <h2 class="text-center">ABOUT</h2>
+                <h2  class="text-center">ABOUT</h2>
                 <!-- inizio separatore  -->
                 <div class="text-center mb-3">
                     <div class="line-ico bg-white d-inline-block align-middle rounded-3"></div>
@@ -106,11 +135,11 @@
                 </div>
                 <!-- fine separatore -->
                 <div class="container">
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-10 col-md-5 mb-5 md-sm-3">
+                    <div class="row row-cols-1 row-cols-md-2 justify-content-center mb-4">
+                        <div class="col mb-5 md-sm-3">
                             Freelancer is a free boostrap theme created by Start Boostrap. The download includes the complete source files including HTML, CSS, and Jaca Script as well as optional LESS stylesheets for easy customization.
                         </div>
-                        <div class="col-10 col-md-5 mb-3 ps-md-4">
+                        <div class="col mb-3 ps-md-4">
                             Whether you're a student looking to showcase your work, a professional looking to attact clients, or a graphic artist looking to share your projects this template is the perfect starting point!
                         </div>
 
@@ -123,8 +152,8 @@
         </div>
 
         <div><!-- bg pagin -->
-            <div class="container px-5 py-5"><!-- block contenitore -->
-                <h2 class="text-center">CONTACT ME</h2>
+            <div  class="container px-5 py-5"><!-- block contenitore -->
+                <h2 id="contact" class="text-center">CONTACT ME</h2>
                 <!-- inizio separatore  -->
                 <div class="text-center mb-3">
                     <div class="line-ico bg-black d-inline-block align-middle rounded-3"></div>
@@ -133,11 +162,11 @@
                 </div>
                 <!-- fine separatore -->
                 <div class="row justify-content-center">
-                    <form class="col-10" action="">
+                    <form class="col-10">
                         <input class="border-1 border-top-0  border-bottom-2 border-start-0 w-100 border-end-0 mb-3" type="text" placeholder="Name">
                         <input class="border-1 border-top-0 border-start-0 w-100 border-end-0 mb-3" type="email" placeholder="Email Address">
                         <input class="border-1 border-top-0 border-start-0 w-100 border-end-0 mb-3" type="text" placeholder="Phone Number">
-                        <textarea class="border-top-0 border-start-0 w-100 border-end-0 mb-3" rows="8" cols="50" name="comment" form="usrform" placeholder="Messaggio"></textarea>
+                        <textarea class="border-top-0 border-start-0 w-100 border-end-0 mb-3" rows="8" cols="50" name="comment" placeholder="Messaggio"></textarea>
                         
                         
                         <input class="btn btn-success" type="submit" value="Send">
@@ -152,18 +181,17 @@
     <footer>
         <div class="footer-top my-bg-grey">
             <div class="container py-5">
-                <div class="row gx-5 justify-content-center text-center text-white">
+                <div class="row justify-content-center text-center text-white">
                     <div class="col-12 col-md-3 col-lg-4 py-4">
                         <h5 class="mb-3">LOCATION</h5>
                         <span>2215 john Daniel Driver Clark, MO 54243</span>
                         </div>
                     <div class="col-12 col-md-6 col-lg-4 py-4">
                         <h5 class="text-uppercase mb-3">around the web</h5>
-                        <ul class="list-inline text-center">
-                            <li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none"href="#"><i class="fab fa-google-plus-g"></i></a></i></li>
-                            <li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none"href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none"href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <ul class="list-inline text-center"><li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none" href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            <li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li class="list-inline-item border border-white border-1 rounded-pill square fs-3"><a class="link-white text-decoration-none" href="#"><i class="fab fa-linkedin-in"></i></a></li>
                             
                         </ul>
                     </div>
@@ -177,13 +205,14 @@
         </div>
         <div class="footer-bottom bg-dark py-3">
             <div class="container">
-            </div>
                 <div class="row">
                     <div class="col text-center text-white">
-                        Copyright <i class="far fa-copyright"></i> Your Website 2019
+                        <span>Copyright <i class="far fa-copyright"></i> Your Website 2019</span>
+                        
                     </div>
                 </div>
             </div>
+         </div>   
     </footer>
     
 </body>
